@@ -35,19 +35,24 @@ const User = sequelize.define('user', {
 //       lastName: 'Hancock'
 //     });
 //   });
+
+// Find All Data
   User.findAll({
     where: {
       id: 2
     }
   });
+//Find One
   User.findOne().then(user => {
     console.log(user.get('id'));
   });
+//Delete From table_name where id = 1;
   User.destroy({
     where: {
       id: 1
     }
   });
+//Update users SET firstName = 'Test', lastName = 'Demo' WHERE createdAt IS NOT NULL
   User.update({
     firstName: 'Test',
     lastName: 'Demo',

@@ -67,6 +67,7 @@ app.post('/ws_fetchSingleUser', function (request, response) {
         response.send(dataErr);
     }
 });
+//Insert User API
 app.post('/ws_insertSingleUser', function (request, response) {
     let id = request.body.id;
     let firstName = request.body.firstName;

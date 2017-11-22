@@ -1,0 +1,23 @@
+<h3>Data through third party API using node</h3>
+<table border="1">
+<thead>
+<th>Id</th>
+<th>Name</th>
+<th>Phone</th>
+</thead>
+<tbody>
+<% 
+if(data.length){                         
+    for(var i = 0;i < data.length;i++) { 
+%>
+	<tr>
+	<td><p> <%=data[i].id %> </p></td>
+	<p><td><%=data[i].name %> </p></td>
+	<p><td><%=data[i].phone %> </p></td>
+	</tr>
+<% 
+	}
+}
+%>
+</tbody>
+</table>
